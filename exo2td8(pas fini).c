@@ -116,12 +116,6 @@ searchElmt(tab,SIZE,15);
 
 
 
-void main () {
-
-int tab[25];
-
- fillArray(tab,SIZE);
- printArray(tab,SIZE);
 
 
 
@@ -131,9 +125,3 @@ int tab[25];
 
 
 
-
-
-
-
-
-}
