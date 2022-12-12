@@ -30,25 +30,33 @@ for(int i=0;i<SIZE;i++){
 evenArray(tab,SIZE);
 
 int tab_even [SIZE];
-for (int i=0;i<SIZE;i++) {
+int tab_odd [SIZE];
+int count1=0;
+int count2=0;
+/*for (int i=0;i<SIZE;i++) {
     if(tab[i]%2==0){
-        tab_even[i]=tab[i];
-        printf("\n tab_even[%d]=%d",i,tab[i]);
+        tab_even[count1]=tab[i];
+        printf("\n tab_even[%d]=%d",count1,tab[i]);
+        count1++;
     }
-}
-}
-/*int tab_odd [SIZE];
-for (int i=0;i<SIZE;i++) {
-    if(tab[i]%2)>=0){
-        tab_odd[i]=tab[i];
-        printf("\n tab_odd[%d]=%d",i,tab[i]);
+
+
+    }*/
+
+
+for (int i=0;i<SIZE;i++){
+if(tab[i]%2>0){
+        tab_odd[count2]=tab[i];
+        printf("\n tab_odd[%d]=%d",count2,tab[i]);
+        count2++;
     }
+
+
 }
 
+
+
 }
-*/
-
-
 
 
 
