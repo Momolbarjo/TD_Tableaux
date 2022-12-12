@@ -1,4 +1,4 @@
-//1 Un tableau de taille 10 avec des valeurs provenant d'anciens programmes executés par l'ordinateur .
+//1 Un tableau de taille 10 avec des valeurs provenant d'anciens programmes executÃ©s par l'ordinateur .
 
 #include <stdio.h>
 #define SIZE 10
