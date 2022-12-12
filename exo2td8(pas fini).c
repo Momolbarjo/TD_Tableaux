@@ -38,9 +38,6 @@ return(moyenne);
 
 
 
-
-
-
 }
 
 int maxArray(int tab[], int size){
@@ -73,19 +70,28 @@ for(int i=0;i<size;i++){
 int searchElmt(int tab[], int size, int elmt){
 
 for(int i=0;i<size;i++){
- if (tab[i]==elmt){
-        printf("\nCela correspond a tab[%d]",i);
-         return(tab[i]);
+ if (elmt==tab[i]){
+         printf("\nCela correspond a tab[%d]",i);
+         return(tab[i]);}}
+	 
+	 printf("\n-1");
+         return (-1);
 
 }
-   /*else {
-        printf("\n-1");
-        return (-1);}
-*/
-}
-}
+
+int badMarks(int tab[], int size){
+
+int count=0;
+
+for (int i=0;i<size;i++){
+  if (tab[i]<7){
+  count++;
+}}
+  printf("\nLe nombre d'elements inferieurs à 7 sont de %d",count);
+  return(count);	
 
 
+}
 
 void main () {
 
@@ -96,26 +102,10 @@ int tab[25];
  averageArray(tab,SIZE);
  maxArray(tab,SIZE);
  minArray(tab,SIZE);
-searchElmt(tab,SIZE,15);
-
-
-
+ searchElmt(tab,SIZE,15);
+ badMarks(tab,SIZE);
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
