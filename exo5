@@ -1,0 +1,35 @@
+#include <stdio.h>
+#define SIZE 15
+
+void inverser(int tab1[],int tab2[],int taille)
+{
+int i2=0;
+
+for (int i=(taille-1);i>=0;i--)
+{
+tab2[i2]=tab1[i];
+i2++;}
+}
+
+void  printArray(int tab2[],int taille) {
+    for (int i2=0;i2<(taille-1);i2++){
+    printf("tab[%d] = %d\n",i2, tab2[i2]);
+    }
+}
+
+void main () {
+
+int tab1[SIZE];
+int tab2[SIZE];
+
+srand(time(NULL));
+for (int i=0;i<SIZE;i++) {
+
+	tab1[i]=rand()%11;
+	printf("tab1[%d]=%d",i,tab[i]);
+}
+	inverser(tab1,tab2,SIZE);
+ 	printArray(tab2,SIZE);
+
+
+}
