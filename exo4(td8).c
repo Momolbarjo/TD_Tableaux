@@ -33,15 +33,13 @@ int tab_even [SIZE];
 int tab_odd [SIZE];
 int count1=0;
 int count2=0;
-/*for (int i=0;i<SIZE;i++) {
+for (int i=0;i<SIZE;i++) {
     if(tab[i]%2==0){
         tab_even[count1]=tab[i];
         printf("\n tab_even[%d]=%d",count1,tab[i]);
         count1++;
     }
-
-
-    }*/
+    }
 
 
 for (int i=0;i<SIZE;i++){
@@ -57,7 +55,6 @@ if(tab[i]%2>0){
 
 
 }
-
 
 
 
