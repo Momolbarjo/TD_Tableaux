@@ -12,7 +12,7 @@ i2++;}
 }
 
 void  printArray(int tab2[],int taille) {
-    for (int i2=0;i2<(taille-1);i2++){
+    for (int i2=0;i2<taille;i2++){
     printf("tab[%d] = %d\n",i2, tab2[i2]);
     }
 }
@@ -26,10 +26,11 @@ srand(time(NULL));
 for (int i=0;i<SIZE;i++) {
 
 	tab1[i]=rand()%11;
-	printf("tab1[%d]=%d",i,tab[i]);
+	printf("tab1[%d]=%d\n",i,tab1[i]);
 }
 	inverser(tab1,tab2,SIZE);
  	printArray(tab2,SIZE);
 
 
 }
+
