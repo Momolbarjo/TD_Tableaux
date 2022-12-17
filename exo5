@@ -13,10 +13,10 @@ tab2[i2]=tab1[i];
 i2++;}
 }
 
-void inverser1(int tab1[],int N)
+void inverser1(int tab1[],int taille)
 {
 int i, j, temp;
-for (i=0, j=N-1; i<j; i++,j--)
+for (i=0, j=(taille-1); i<j; i++,j--)
 {
 temp = tab1[i];
 tab1[i] = tab1[j];
