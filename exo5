@@ -1,5 +1,7 @@
 #include <stdio.h>
-#define SIZE 15
+#include <time.h>
+#include <stdlib.h>
+#define SIZE 5
 
 void inverser(int tab1[],int tab2[],int taille)
 {
@@ -10,6 +12,18 @@ for (int i=(taille-1);i>=0;i--)
 tab2[i2]=tab1[i];
 i2++;}
 }
+
+void inverser1(int tab1[],int N)
+{
+int i, j, temp;
+for (i=0, j=N-1; i<j; i++,j--)
+{
+temp = tab1[i];
+tab1[i] = tab1[j];
+tab1[j] = temp;
+}
+}
+
 
 void  printArray(int tab2[],int taille) {
     for (int i2=0;i2<taille;i2++){
@@ -23,14 +37,19 @@ int tab1[SIZE];
 int tab2[SIZE];
 
 srand(time(NULL));
+printf("Notre tableau de base : \n");
 for (int i=0;i<SIZE;i++) {
 
 	tab1[i]=rand()%11;
 	printf("tab1[%d]=%d\n",i,tab1[i]);
-}
-	inverser(tab1,tab2,SIZE);
- 	printArray(tab2,SIZE);
+
+	}
+    inverser1(tab1,SIZE);
+ 	printf("Notre tableau inversé : \n");
+    printArray(tab1,SIZE);
+   // printArray(tab2,SIZE);
 
 
 }
+
 
