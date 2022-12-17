@@ -45,7 +45,7 @@ for (int i=0;i<SIZE;i++) {
 
 	}
     inverser1(tab1,SIZE);
- 	printf("Notre tableau inversé : \n");
+ 	printf("Notre tableau inverse : \n");
     printArray(tab1,SIZE);
    // printArray(tab2,SIZE);
 
